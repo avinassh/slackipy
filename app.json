@@ -11,6 +11,10 @@
     "slack_team_name": {
       "description": "Your Slack Team Name",
       "required": true
+    },
+    "flask_app_secret": {
+      "description": "Secret Key For Flask App",
+      "required": true
     }
   }
 }
