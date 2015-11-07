@@ -1,0 +1,16 @@
+{
+  "name": "slackipy",
+  "description": "Automate user invites to your Slack channel!",
+  "repository": "https://github.com/avinassh/slackipy",
+  "keywords": ["python", "slack"],
+  "env": {
+    "slack_api_token": {
+      "description": "Slack API Token",
+      "required": true
+    },
+    "slack_team_name": {
+      "description": "Your Slack Team Name",
+      "required": true
+    }
+  }
+}
