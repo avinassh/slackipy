@@ -29,8 +29,9 @@ function handleResponse(data) {
     document.data = data
     if (data.status === 'success') {
       console.log('success')
+      Materialize.toast('Success!', 4000)
     }
     if (data.status === 'fail') {
-      console.log('failed')
+      Materialize.toast(data.error, 4000)
     }
 }
