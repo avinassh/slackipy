@@ -17,9 +17,10 @@ except IOError:
 
 from main import app as application
 
-application.config['slack_team_name'] = os.environ['slack_team_name']
-application.config['slack_api_token'] = os.environ['slack_api_token']
+application.config['SLACK_TEAM_ID'] = os.environ['SLACK_TEAM_ID']
+application.config['SLACK_API_TOKEN'] = os.environ['SLACK_API_TOKEN']
 application.config['SECRET_KEY'] = os.urandom(50)
+
 
 # Below for testing locally only
 if __name__ == '__main__':
