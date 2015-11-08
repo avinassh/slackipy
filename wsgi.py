@@ -19,7 +19,7 @@ from main import app as application
 
 application.config['slack_team_name'] = os.environ['slack_team_name']
 application.config['slack_api_token'] = os.environ['slack_api_token']
-application.config['SECRET_KEY'] = os.environ['flask_app_secret']
+application.config['SECRET_KEY'] = os.urandom(50)
 
 # Below for testing locally only
 if __name__ == '__main__':
