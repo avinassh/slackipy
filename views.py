@@ -5,7 +5,7 @@ from forms import InviteForm
 from slack import invite_user, get_team_name
 
 
-class Index(MethodView):
+class IndexView(MethodView):
 
     def get(self):
         team_id = current_app.config['SLACK_TEAM_ID']
