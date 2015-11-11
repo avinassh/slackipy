@@ -11,6 +11,10 @@ body{
 	background-color: #f5f5f5;
 	position: relative;
 }
+/*Utility class to center align text*/
+.u-txtCenter{
+	text-align: center;
+}
 .container{
 	height: 100%;
 	width: 100%;
@@ -84,5 +88,13 @@ body{
 		margin-left: 5px;
 		height: 50px;
 		background-size: 45px;
+	}
+}
+
+@media(max-width: 400px){
+	.form-container{
+		width: auto;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 }

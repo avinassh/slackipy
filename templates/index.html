@@ -8,6 +8,7 @@
         <h3> #{{ team_name }} on Slack</h3>
     </div>
     <div class="form-container">
+    <div class="u-txtCenter">Enter you email below to get an invite.</div>
         <form method="POST" action="/" id="invite-form">
             {{ form.hidden_tag() }}
             {{ form.email.label }} {{ form.email(size=20) }}
