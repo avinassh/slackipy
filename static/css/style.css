@@ -1,1 +1,76 @@
 /* CSS For Landing Page */
+html, body {
+	height: 100%;
+	width: 100%;
+	padding:0;
+	margin: 0;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	background-color: #f5f5f5;
+	position: relative;
+}
+.container{
+	height: 100%;
+	width: 100%;
+	max-width: 100%;
+}
+*{
+	box-sizing: border-box;
+}
+.hero{
+	text-align: center;
+	font-weight: 300;
+	padding-top: 20px;
+}
+.hero h3{
+	font-weight: inherit;
+}
+.hero h3,.existing-user-link a{
+	color: #e8a620;
+}
+.slack-logo{
+	background: url("../img/slack-logo.svg") no-repeat center;
+	background-size: 70px;
+	height: 75px;
+}
+.wrapper{
+	height: 100%;
+	//margin-bottom:-65px;
+}
+.form-container{
+	width: 400px;
+	padding: 10px;
+	background: #FFF none repeat scroll 0% 0%;
+	box-shadow: 1px 7px 7px #E7E1E1;
+	margin: 50px auto 0;
+}
+.btn{
+	background-color: #e8a620
+}
+.btn:hover{
+	background-color: #C08A1C
+}
+.existing-user-link{
+	text-align: center;
+	font-weight: 300;
+	font-size: 1.5em;
+	margin: 20px 0;
+}
+.footer{
+	text-align: center;
+	font-size: 15px;
+	background-color: #fff;
+	padding: 20px;
+	display: inline-block;
+	border-radius: 100px;
+	box-shadow: 1px -2px 2px #ccc;
+	position: absolute;
+	bottom: 20px;
+	right:20px;
+}
+.slackipy-logo{
+	height: 25px;
+	vertical-align: middle;
+}
