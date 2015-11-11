@@ -29,7 +29,7 @@ function handleResponse(data) {
     if (data.status === 'fail') {
       $("#response-text").text(getUserFriendlyError(data.error));
     }
-    $("#response-div").toggleClass('hidden');
+    $("#response-div").removeClass('hidden');
 }
 
 function getUserFriendlyError(error){
