@@ -11,6 +11,10 @@
     "SLACK_TEAM_ID": {
       "description": "Your Slack Team Name",
       "required": true
+    },
+    "FLASK_SECRET_KEY": {
+      "description": "Enter a random string",
+      "required": true
     }
   }
 }

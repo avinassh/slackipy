@@ -19,7 +19,7 @@ from main import app as application
 
 application.config['SLACK_TEAM_ID'] = os.environ['SLACK_TEAM_ID']
 application.config['SLACK_API_TOKEN'] = os.environ['SLACK_API_TOKEN']
-application.config['SECRET_KEY'] = os.urandom(50)
+application.config['SECRET_KEY'] = os.environ['FLASK_SECRET_KEY']
 
 
 # Below for testing locally only
