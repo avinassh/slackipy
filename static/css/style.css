@@ -11,6 +11,10 @@ body{
 	background-color: #f5f5f5;
 	position: relative;
 }
+/*Utility class to center align text*/
+.u-txtCenter{
+	text-align: center;
+}
 .container{
 	height: 100%;
 	width: 100%;
@@ -37,7 +41,6 @@ body{
 }
 .wrapper{
 	height: 100%;
-	//margin-bottom:-65px;
 }
 .form-container{
 	width: 400px;
@@ -84,4 +87,25 @@ body{
 	margin: 20px 0;
 	padding-right: 2%;
     padding-left: 2%;
+}
+
+@media(max-height: 450px),(max-width: 500px){
+	.footer {
+		top: 20px;
+		bottom: auto;
+	}
+	.slack-logo{
+		background-position: left center;
+		margin-left: 5px;
+		height: 50px;
+		background-size: 45px;
+	}
+}
+
+@media(max-width: 400px){
+	.form-container{
+		width: auto;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
 }
