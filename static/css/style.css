@@ -78,6 +78,7 @@ body{
 	vertical-align: middle;
 }
 
+
 @media(max-height: 450px),(max-width: 500px){
 	.footer {
 		top: 20px;
@@ -97,4 +98,15 @@ body{
 		margin-left: 10px;
 		margin-right: 10px;
 	}
-}
+
+	.hidden {
+		visibility:hidden;
+	}
+	#response-text{
+		text-align: center;
+		font-weight: 300;
+		font-size: 1.5em;
+		margin: 20px 0;
+		padding-right: 2%;
+		padding-left: 2%;
+	}
