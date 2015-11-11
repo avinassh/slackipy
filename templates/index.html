@@ -2,28 +2,33 @@
 {% block title %}{{ team_name }}{% endblock %}
 
 {% block body %}
-
-<h1> {{ team_name }} Slack Invite </h1>
-
-<h5> Enter Your Email to Get Invited to <a href="https://{{ team_id }}.slack.com">{{ team_name }}</a> Slack Team </h5>
-
-
-<form method="POST" action="/" id="invite-form">
-    {{ form.hidden_tag() }}
-    {{ form.email.label }} {{ form.email(size=20) }}
-    <div id="submit-button"><button class="btn waves-effect waves-light" type="submit" name="action">Submit
-    <i class="material-icons right">send</i></div>
-  </button>
-</form>
-
-<h5> Or <a href="https://{{ team_id }}.slack.com">sign in.</a></h5>
-
+<div class="wrapper">
+    <div class="hero">
+        <div class="slack-logo"></div>
+        <h3> #{{ team_name }} on Slack</h3>
+    </div>
+    <div class="form-container">
+        <form method="POST" action="/" id="invite-form">
+            {{ form.hidden_tag() }}
+            {{ form.email.label }} {{ form.email(size=20) }}
+            <div id="submit-button"><button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i></div>
+            </button>
+        </form>
+    </div>
+    <h5 class="existing-user-link">Have an account? <a href="https://{{ team_id }}.slack.com">Sign in here.</a></h5>
+</div>
+<footer class="footer">
+<a href="https://github.com/avinassh/slackipy" title="Powered by Slackipy">
+       <img src={{ url_for('static', filename='img/logo.png') }} alt="Slackipy" class="slackipy-logo" />
+   </a>
+</footer>
 {% endblock %}
 
 {% block javascript %}
-    {{ super() }}
-    <script type="text/javascript">
-        var csrfToken = "{{ csrf_token() }}";
-    </script>
-    <script src={{ url_for('static', filename='js/submit.js') }}></script>
+{{ super() }}
+<script type="text/javascript">
+    var csrfToken = "{{ csrf_token() }}";
+</script>
+<script src={{ url_for('static', filename='js/submit.js') }}></script>
 {% endblock %}
