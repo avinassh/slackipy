@@ -11,7 +11,7 @@ def invite_user(email):
     try:
         if invite(team_id=team_id, api_token=api_token,
                   invitee_email=email):
-            return json.dumps({'status': 'success'})
+            return {'status': 'success'}
     except (AlreadyInTeam, InvalidInviteeEmail, InvalidAuthToken,
             AlreadyInvited, APIRequestError) as e:
         return _response_message(message=str(e))
