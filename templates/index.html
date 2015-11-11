@@ -11,7 +11,7 @@
     <div class="u-txtCenter">Enter you email below to get an invite.</div>
         <form method="POST" action="/" id="invite-form">
             {{ form.hidden_tag() }}
-            {{ form.email.label }} {{ form.email(size=20) }}
+            {{ form.email(size=20, placeholder="Email Address") }}
             <div id="submit-button"><button class="btn waves-effect waves-light" type="submit" name="action">Submit
                 <i class="material-icons right">send</i></div>
             </button>
