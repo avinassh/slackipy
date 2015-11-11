@@ -26,6 +26,7 @@ $(document).ready(function()
 });
 
 function handleResponse(data) {
+    $("#response-text").text('Successful! Check your email (:');
     if (data.status === 'fail') {
       $("#response-text").text(getUserFriendlyError(data.error));
     }
