@@ -74,3 +74,14 @@ body{
 	height: 25px;
 	vertical-align: middle;
 }
+.hidden {
+	visibility:hidden;
+}
+#response-text{
+	text-align: center;
+	font-weight: 300;
+	font-size: 1.5em;
+	margin: 20px 0;
+	padding-right: 2%;
+    padding-left: 2%;
+}
