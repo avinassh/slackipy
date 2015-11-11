@@ -32,6 +32,20 @@ function handleResponse(data) {
       Materialize.toast('Success!', 4000)
     }
     if (data.status === 'fail') {
-      Materialize.toast(data.error, 4000)
+      Materialize.toast(getUserFriendlyError(data.error), 4000)
     }
+}
+
+function getUserFriendlyError(error){
+  if(error === 'already_in_team'){
+    return 'Already signed up! Click on "Sign in" below to get started';
+  } else if(error === 'invalid_email'){
+    return 'Thats an invalid email address. Please check again';
+  } else if(error === 'already_invited'){
+    return 'You have been invited already. Check your inbox!';
+  } else if(error === 'invalid_auth'){
+    return 'There seems to be some issues with the setup. Please contact the admin of this channel';
+  } else{
+    return error;
+  }
 }
