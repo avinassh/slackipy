@@ -37,7 +37,6 @@ body{
 }
 .wrapper{
 	height: 100%;
-	//margin-bottom:-65px;
 }
 .form-container{
 	width: 400px;
@@ -73,4 +72,17 @@ body{
 .slackipy-logo{
 	height: 25px;
 	vertical-align: middle;
+}
+
+@media(max-height: 450px),(max-width: 500px){
+	.footer {
+		top: 20px;
+		bottom: auto;
+	}
+	.slack-logo{
+		background-position: left center;
+		margin-left: 5px;
+		height: 50px;
+		background-size: 45px;
+	}
 }
