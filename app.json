@@ -3,6 +3,7 @@
   "description": "Automate user invites to your Slack channel!",
   "repository": "https://github.com/avinassh/slackipy",
   "keywords": ["python", "slack"],
+  "logo": "https://raw.githubusercontent.com/avinassh/slackipy/master/static/img/logo.png",
   "env": {
     "SLACK_API_TOKEN": {
       "description": "Slack API Token",
