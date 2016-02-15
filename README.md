@@ -53,7 +53,7 @@ To install locally, clone the repo, install the requirements and run `wsgi.py`:
     $ pip install -r requirements.txt
     $ python wsgi.py
 
-The app will be available at [localhost:8091](http://localhost:8091)
+The app will be available at [localhost:8051](http://localhost:8051)
 
 # Credits
 
