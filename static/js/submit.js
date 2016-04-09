@@ -35,7 +35,7 @@ function handleResponse(data) {
 
 function getUserFriendlyError(error){
   if(error === 'already_in_team'){
-    return 'Already signed up! Click on "Sign in" below to get started';
+    return 'Already signed up! Click on "Sign in" to get started';
   } else if(error === 'invalid_email'){
     return 'Thats an invalid email address. Please check again';
   } else if(error === 'already_invited'){
