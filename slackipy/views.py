@@ -17,4 +17,7 @@ class IndexView(MethodView):
     def post(self):
         form = InviteForm(request.form)
         email = form.email.data
-        return jsonify(invite_user(email))
+        team_name = get_team_name()
+        result = invite_user(email)
+        return render_template('return.html',
+                               team_name=team_name, result=result)
