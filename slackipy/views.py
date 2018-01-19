@@ -1,8 +1,8 @@
 from flask.views import MethodView
 from flask import request, render_template, current_app, jsonify
 
-from forms import InviteForm
-from slack import invite_user, get_team_name
+from .forms import InviteForm
+from .slack import invite_user, get_team_name
 
 
 class IndexView(MethodView):

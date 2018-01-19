@@ -1,11 +1,11 @@
 from flask import Flask
-from flask_wtf.csrf import CsrfProtect
+from flask_wtf.csrf import CSRFProtect
 
-from views import IndexView
+from .views import IndexView
 
 
 app = Flask(__name__)
-CsrfProtect(app)
+CSRFProtect(app)
 app.add_url_rule('/', view_func=IndexView.as_view('index'))
 
 
