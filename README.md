@@ -21,7 +21,7 @@ You need following:
 
 # Heroku 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/deeplook/slackipy/tree/master)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/avinassh/slackipy/tree/master)
 
 # Openshift 
 
