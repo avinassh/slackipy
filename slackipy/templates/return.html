@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}{{ team_name }}{% endblock %}
+
+{% block body %}
+<div class="wrapper">
+    <div class="hero">
+        <div class="slack-logo"></div>
+        <h3> #{{ team_name }} on Slack</h3>
+        {% if result.status == "success" %}
+        <h4> Invitation successfully sent! </h4>
+        {% else %}
+        <h4> Sending invitation failed! </h4>
+        <h4> Error: {{ result.error }} </h4>
+        {% endif %}
+    </div>
+</div>
+<footer class="footer">
+<a href="https://github.com/avinassh/slackipy" title="Powered by Slackipy">
+       <img src={{ url_for('static', filename='img/logo.png') }} alt="Slackipy" class="slackipy-logo" />
+   </a>
+</footer>
+{% endblock %}
+
+{% block javascript %}
+{{ super() }}
+<script type="text/javascript">
+    var csrfToken = "{{ csrf_token() }}";
+</script>
+<script src={{ url_for('static', filename='js/submit.js') }}></script>
+{% endblock %}
